@@ -5,7 +5,7 @@ Implementation
 
 This repository was forked from [LETC](https://github.com/tongnie/tensor4kriging) and modified to work as one of the baselines for our study (Reference number: T-ITS-24-06-1995).
 
-First, you should download the data via [Google Drive](https://drive.google.com/drive/folders/14VPjNlQQRd5FCXXHrBPYbety9fiWx7--?usp=drive_link), and put each data set folder under the folder data/.
+First, you should download the data via [Google Drive](https://drive.google.com/file/d/18MlKp1aoJMHkvn--h6K6spOfW9BARG4P/view?usp=drive_link), and put each data set folder under the folder data/.
 
 
 
