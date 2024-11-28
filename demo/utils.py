@@ -3,11 +3,11 @@ import random
 
 
 def generate_cr_missing(mat,lost_rate,mode='c'):
-  """
-  Generate colume(row)-wise entire missing entries to simulate the unmeasured scenarios in kriging problem
-  input:
+    """
+    Generate colume(row)-wise entire missing entries to simulate the unmeasured scenarios in kriging problem
+    input:
     mat: spatiotemporal matrix with shape (time*location)
-  """
+    """
     if mode == 'c':
         column_nums = mat.shape[1]
         lost_columns = random.sample(list(range(column_nums)),int(lost_rate*column_nums))
@@ -20,23 +20,23 @@ def generate_cr_missing(mat,lost_rate,mode='c'):
         matrix_cr_lost[lost_rows,:] = 0
     else:
         raise TypeError(" 'mode' need to be 'c' or 'r'! ")
-    
+
     return matrix_cr_lost
 
 
 def generate_random_missing(link_matrix,lost_rate): 
-   """Generate element-wise random missing"""
+    """Generate element-wise random missing"""
     link_matrix_lost = link_matrix.copy()
     coord = []
     m,n = link_matrix.shape
     for i in range(m):
         for j in range(n):
             coord.append((i,j))
-    
+
     mask = random.sample(coord,int(lost_rate*len(coord)))
     for coord in mask:
         link_matrix_lost[coord[0],coord[1]] = 0
-      
+        
     return link_matrix_lost
 
 def get_missing_rate(X_lost):

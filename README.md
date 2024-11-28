@@ -1,3 +1,18 @@
+# LETC baseline
+
+Implementation
+![Implementation](/graphcis/implementation.gif)
+
+This repository was forked from [LETC](https://github.com/tongnie/tensor4kriging) and modified to work as one of the baselines for our study (Reference number: T-ITS-24-06-1995).
+
+First, you should download the data via [Google Drive](https://drive.google.com/drive/folders/14VPjNlQQRd5FCXXHrBPYbety9fiWx7--?usp=drive_link), and put each data set folder under the folder data/.
+
+
+
+
+# The following is the original readme file
+
+
 ## Spatiotemporal Laplacian-enhanced low-rank tensor learning for large-scale traffic speed kriging with missing data
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-blue.svg)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
