@@ -1,7 +1,7 @@
 # LETC baseline
 
 Implementation
-![Implementation](/graphcis/implementation.gif)
+![Implementation](/graphics/implementation.gif)
 
 This repository was forked from [LETC](https://github.com/tongnie/tensor4kriging) and modified to work as one of the baselines for our study (Reference number: T-ITS-24-06-1995).
 
